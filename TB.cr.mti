@@ -1,0 +1,64 @@
+D:/Lab3-20240221T153534Z-001/Lab3/lfshr.sv {1 {vlog -work work -vopt -sv D:/Lab3-20240221T153534Z-001/Lab3/lfshr.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module lfshr
+
+Top level modules:
+	lfshr
+
+} {} {}} D:/Lab3-20240221T153534Z-001/Lab3/mux2.sv {1 {vlog -work work -vopt -sv D:/Lab3-20240221T153534Z-001/Lab3/mux2.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module mux2
+
+Top level modules:
+	mux2
+
+} {} {}} D:/Lab3-20240221T153534Z-001/Lab3/top_lab3.sv {1 {vlog -work work -vopt -sv {D:\Lab3-20240221T153534Z-001\Lab3\top_lab3.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module top_lab3
+
+Top level modules:
+	top_lab3
+
+} {} {}} D:/Lab3-20240221T153534Z-001/Lab3/tb_fifo.sv {1 {vlog -work work -vopt -sv D:/Lab3-20240221T153534Z-001/Lab3/tb_fifo.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module fifoctrl_tb
+
+Top level modules:
+	fifoctrl_tb
+
+} {} {}} D:/Lab3-20240221T153534Z-001/Lab3/lshr.sv {1 {vlog -work work -vopt -sv D:/Lab3-20240221T153534Z-001/Lab3/lshr.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module lfshr_tb
+
+Top level modules:
+	lfshr_tb
+
+} {} {}} D:/Lab3-20240221T153534Z-001/Lab3/bcdtohex.sv {1 {vlog -work work -vopt -sv D:/Lab3-20240221T153534Z-001/Lab3/bcdtohex.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module bcdtohex
+
+Top level modules:
+	bcdtohex
+
+} {} {}} D:/Lab3-20240221T153534Z-001/Lab3/memories.sv {1 {vlog -work work -vopt -sv D:/Lab3-20240221T153534Z-001/Lab3/memories.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module memories
+
+Top level modules:
+	memories
+
+} {} {}} C:/Users/ACER/Downloads/fifoctrl.v {1 {vlog -work work -vopt C:/Users/ACER/Downloads/fifoctrl.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module fifoctrl
+
+Top level modules:
+	fifoctrl
+
+} {} {}} D:/Lab3-20240221T153534Z-001/Lab3/clock_divider.sv {1 {vlog -work work -vopt -sv {D:\Lab3-20240221T153534Z-001\Lab3\clock_divider.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module Clock_divider
+
+Top level modules:
+	Clock_divider
+
+} {} {}}

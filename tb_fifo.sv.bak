@@ -1,0 +1,50 @@
+module fifoctrl_tb;
+
+    // Inputs
+    reg clkw, clkr, rst, fiford, fifowr;
+    // Outputs
+    wire fifofull, notempty;
+    wire [5:0] fifolen;
+    wire write, read;
+    wire [4:0] wraddr, rdaddr;
+
+    // Instantiate the fifoctrl module
+    fifoctrl uut (
+        .clkw(clkw),
+        .clkr(clkr),
+        .rst(rst),
+        .fiford(fiford),
+        .fifowr(fifowr),
+        .fifofull(fifofull),
+        .notempty(notempty),
+        .fifolen(fifolen),
+        .write(write),
+        .wraddr(wraddr),
+        .read(read),
+        .rdaddr(rdaddr)
+    );
+
+    // Initialize inputs
+    initial begin
+        clkw = 1'b0;
+        clkr = 1'b0;
+        rst = 1'b0;
+        fiford = 1'b0;
+        fifowr = 1'b0;
+        #10 rst = 1'b1; // Set reset high after 10 time units
+        #10 fifowr = 1'b1; // Start writing data after 10 time units
+        #100 $finish; // End simulation after 100 time units
+    end
+
+    // Clock generation
+    always #5 clkw = ~clkw;
+    always #10 clkr = ~clkr;
+
+    // Print statements
+    initial begin
+        $display("Time \t clkw \t clkr \t rst \t fiford \t fifowr \t fifofull \t notempty \t fifolen \t write \t wraddr \t read \t rdaddr");
+        $monitor("%0t \t %b \t %b \t %b \t %b \t\t %b \t\t %b \t\t %b \t\t %b \t\t %0d \t %b \t\t %0d \t %b", $time, clkw, clkr, rst, fiford, fifowr, fifofull, notempty, fifolen, write, wraddr, read, rdaddr);
+    end
+
+endmodule
+
